@@ -1,18 +1,18 @@
-ChromeHistoryReader
+Chrome History Reader
 ===================
 
 Reading Chrome browser history data into processing.
 
 This code is based on "SQLite_example1" included in BezierSQLib library.
 
-To use ChromeHistoryReader follow instruction.
+To use ChromeHistoryReader follows the instruction.
 
-1. go to “http://bezier.de/processing/libs/sql/” and get “BezierSQLib version 0.2.0″ library
-2. move the library  into ~/document/processing/libraries
-3. rename it to “BezierSQLib”
-4. open "ChromeHitoryReader" in Processing and or just paste following sample code(this is exactly same code as ChromeHistoryReader.pde)
+1. Go to “http://bezier.de/processing/libs/sql/” and get “BezierSQLib version 0.2.0″ library
+2. Move the library  into ~/document/processing/libraries
+3. Rename it to “BezierSQLib”
+4. Open "ChromeHitoryReader" in Processing or just paste following sample code on editor in Processing (this is exactly same code as ChromeHistoryReader.pde)
 
-/ ***************** START sample code ****************/
+/***************** START sample code ****************/
 
 import de.bezier.data.sql.*;
 SQLite db;
@@ -30,11 +30,12 @@ void setup()
     }
 }
 
-/ ***************** END sample code ****************/
+/***************** END sample code ****************/
 
-5. db = new SQLite( this, “/Users/YOUR_ACCOUNT_NAME/Library/Application Support/Google/Chrome/Profile 1/History” );  replace “YOUR_ACCOUNT_NAME” to your user name(account name).
+5. db = new SQLite( this, “/Users/YOUR_ACCOUNT_NAME/Library/Application Support/Google/Chrome/Profile 1/History” );  replace “YOUR_ACCOUNT_NAME” to your user name(account name)
 
 Please make sure Chrome Browser is not running.
+
 Finally, when you run it, you can see all history with access date in the console of Processing.
 
 
