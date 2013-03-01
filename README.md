@@ -32,8 +32,8 @@ void setup()
 
 /***************** END sample code ****************/
 
-5. db = new SQLite( this, “/Users/YOUR_ACCOUNT_NAME/Library/Application Support/Google/Chrome/Profile 1/History” );  replace “YOUR_ACCOUNT_NAME” to your user name(account name)
-
+5. db = new SQLite( this, “/Users/YOUR_ACCOUNT_NAME/Library/Application Support/Google/Chrome/Profile 1/History” );  replace “YOUR_ACCOUNT_NAME” with your user name(account name)
+  And if it runs and you got error message, replace "Profile 1" with "default" or make sure your environment where Hisotry file is located. 
 Please make sure Chrome Browser is not running.
 
 Finally, when you run it, you can see all history with access date in the console of Processing.
