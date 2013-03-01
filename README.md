@@ -19,7 +19,7 @@ SQLite db;
 void setup()
 {
     size( 100, 100 );
-    db = new SQLite( this, “/Users/amaoka/Library/Application Support/Google/Chrome/Profile 1/History” );  // open database file
+    db = new SQLite( this, “/Users/YOUR_ACCOUNT_NAME/Library/Application Support/Google/Chrome/Profile 1/History” );  // open database file
     if ( db.connect() )
     {
        db.query( “select datetime(last_visit_time/1000000-11644473600,’unixepoch’),url from  urls order by last_visit_time desc”);
@@ -29,10 +29,13 @@ void setup()
        }
     }
 }
+
 / ***************** END sample code ****************/
 
-5.   db = new SQLite( this, “/Users/YOUR_ACCOUNT_NAME/Library/Application Support/Google/Chrome/Profile 1/History” );  replace “YOUR_ACCOUNT_NAME” to your user name(account name).
+5. db = new SQLite( this, “/Users/YOUR_ACCOUNT_NAME/Library/Application Support/Google/Chrome/Profile 1/History” );  replace “YOUR_ACCOUNT_NAME” to your user name(account name).
 
+Please make sure Chrome Browser is not running.
 Finally, when you run it, you can see all history with access date in the console of Processing.
+
 
 ENJOY!
